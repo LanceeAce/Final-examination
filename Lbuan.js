@@ -53,13 +53,11 @@ app.delete('/students/:id', (req, res) => {
   }
   students.splice(studentIndex, 1);
 
-  
   if (students.length === 0) {
     nextId = 0;
   }
   res.json({ message: 'nadelete napo' });
 });
-
 
 
 app.listen(PORT, () => {
